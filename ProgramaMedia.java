@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package programamedia;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Aline Ferreira
+ */
+public class ProgramaMedia {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+      
+        // TODO code application logic here
+    Scanner teclado = new Scanner(System.in);
+        System.out.print("Insira a 1° nota: ");
+    float n1 = teclado.nextFloat();
+        System.out.print("Insira a 2° nota: ");
+    float n2 = teclado.nextFloat();
+    float media = (n1 + n2)/2;
+    System.out.println("Sua média foi: " + media);
+        
+    if (media > 5) {
+        System.out.println("Parábens");
+    } else {
+        System.out.println("Infelizmente você não atingiu a média e foi reprovado");
+    }
+        
+    
+    
+    }
+    
+}
